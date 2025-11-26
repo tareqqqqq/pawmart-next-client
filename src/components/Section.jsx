@@ -1,0 +1,60 @@
+"use client";
+
+import React from "react";
+
+const heroes = [
+  {
+    name: "Sadia Rahman",
+    role: "Animal Rescuer",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2v03FZLjpf6vbweOfu8zQJAYY1i2ugE6F-g&s",
+    quote:
+      "Adopting from PawMart changed my life — I rescued Milo, and he rescued me back with love!",
+  },
+  {
+    name: "Tariq Hasan",
+    role: "Volunteer Caregiver",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFil4X-bTw-PSIRLB0YFMiK5EbiXdrQSoeHA&s",
+    quote:
+      "Every animal deserves love and care. PawMart connects hearts with furry friends perfectly.",
+  },
+  {
+    name: "Nabila Chowdhury",
+    role: "Pet Parent",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVBZ2ed4XdbtxR8Xe4LhQK5XABtx0bACcL6Q&s",
+    quote:
+      "I never thought adopting a rescue cat could bring so much joy into our home!",
+  },
+];
+
+export default function Section() {
+  return (
+    <section className="bg-white py-16 px-6">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-10">
+        🦸 Meet Our <span className="text-pink-600">Pet Heroes</span>
+      </h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+        {heroes.map((hero, index) => (
+          <div
+            key={index}
+            className="bg-gradient-to-b from-pink-50 to-white shadow-lg rounded-2xl p-6 text-center hover:shadow-xl transition duration-300"
+          >
+            <img
+              src={hero.image}
+              alt={hero.name}
+              className="w-24 h-24 md:w-32 md:h-32 object-cover rounded-full mx-auto mb-4 border-4 border-pink-200"
+            />
+            <h3 className="text-lg md:text-xl font-semibold text-gray-800">
+              {hero.name}
+            </h3>
+            <p className="text-pink-600 text-sm mb-3">{hero.role}</p>
+            <p className="text-gray-600 italic text-sm">“{hero.quote}”</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
