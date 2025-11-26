@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+🐾 PawMart – Pet Adoption & Shop Platform
+Next.js | Tailwind CSS | Responsive | Modern UI | Protected Routes
 
-## Getting Started
+PawMart is a modern pet adoption & pet product management platform built using Next.js 16, React, and Tailwind CSS.
+The platform allows users to browse pets, explore products, and manage them through protected admin routes.
 
-First, run the development server:
+🔗 Live Demo
 
-```bash
+👉 https://pawmart-next-client.vercel.app/
+
+📦 GitHub Repository
+
+👉 https://github.com/tareqqqqq/pawmart-next-client
+
+📘 Project Overview
+
+PawMart lets users adopt pets, buy pet products, and manage items from a secure dashboard.
+The website includes animations, responsive design, and clean UI.
+
+🔐 Authentication Note:
+If you log in, you will see Add Product and Manage Product in the navbar —
+because these routes are protected and only visible to authenticated users.
+
+⚙️ Tech Stack
+
+Next.js 16 (App Router)
+
+React
+
+Tailwind CSS
+
+Lucide Icons
+
+SweetAlert
+
+CSS Animations
+
+Vercel Deployment
+
+🚀 Installation & Setup Instructions
+1️⃣ Clone the repository
+git clone https://github.com/tareqqqqq/pawmart-next-client
+
+2️⃣ Go to project folder
+cd pawmart-next-client
+
+3️⃣ Install dependencies
+npm install
+
+4️⃣ Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Local development URL:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+http://localhost:3000
 
-## Learn More
+📁 Project Structure
+src/
+ ├─ app/
+ │   ├─ page.jsx
+ │   ├─ about/
+ │   ├─ products/
+ │   ├─ add-product/        (Protected)
+ │   ├─ manage-product/     (Protected)
+ │   └─ globals.css
+ ├─ components/
+ └─ public/
 
-To learn more about Next.js, take a look at the following resources:
+🛣️ Route Summary
+Route	Type	Description
+/	Public	Home page with hero, sections & animations
+/about	Public	PawMart story & mission
+/products	Public	List of all pet products
+/add-product	Protected	Only logged-in users can add items
+/manage-product	Protected	Only logged-in users can delete/manage products
+⭐ Features
+🏠 Home Page
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Beautiful hero banner
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Why Adopt section
 
-## Deploy on Vercel
+Category cards
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Flip-card animations
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Responsive layout
+
+📦 Product Management
+
+Add new product (secure route)
+
+Manage / delete product (secure route)
+
+User-friendly design
+
+🔐 Protected Routes
+
+Navbar dynamically shows extra menu options after login
+
+Unauthorized users cannot access admin pages
+
+📱 Fully Responsive Design
+
+Works perfectly on all screen sizes.
+
+📌 Deployment Notes
+
+Deployed on Vercel with default Next.js configuration.
+No additional setup required.
+
+❤️ Thanks for Visiting PawMart!
