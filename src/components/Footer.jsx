@@ -2,7 +2,7 @@ import Link from "next/link";
 import { PawPrint } from "lucide-react";
 
 export default function Footer() {
-  return (<footer className="bg-gradient-to-r from-rose-100 via-pink-100 to-orange-100 text-gray-800 mt-10">
+  return (<footer className="bg-linear-to-r from-rose-100 via-pink-100 to-orange-100 text-gray-800 mt-10">
       <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Logo & Description */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
@@ -25,14 +25,14 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link className="hover:text-rose-500 transition-colors">
-                Contact
+              <Link href="/about" className="hover:text-rose-500 transition-colors">
+               About
               </Link>
             </li>
             <li>
-              <Link className="hover:text-rose-500 transition-colors">
-                Terms & Conditions
-              </Link>
+              <p  className="hover:text-rose-500 transition-colors">
+                Terms and conditions
+              </p>
             </li>
           </ul>
         </div>
